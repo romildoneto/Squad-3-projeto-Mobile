@@ -1,6 +1,7 @@
 import React from 'react';
 import {  Text, View,Button,TextInput,StyleSheet,
     TouchableOpacity } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 
 function Cadastro({navigation}) {
     function abrirDawer() {
@@ -8,10 +9,11 @@ function Cadastro({navigation}) {
     }
   
     return (
+      <ScrollView>
       <View style={styles.container}>
         
   
-        <Button title="Abrir"
+        <Button title="Seja bem vindo em nossa plataforma"
         onPress={
             abrirDawer
         } 
@@ -92,7 +94,7 @@ function Cadastro({navigation}) {
 
           </View>
       </View>
-
+      </ScrollView>
       
     )
   }

@@ -1,6 +1,8 @@
 import React from 'react';
 import {  Text, View,Button,TextInput,StyleSheet,
     TouchableOpacity } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
+
 
 function Login({navigation}) {
     function abrirDawer() {
@@ -8,15 +10,17 @@ function Login({navigation}) {
     }
   
     return (
+  <ScrollView>
       <View style={styles.container}>
         
   
-        <Button title="Abrir"
+        <Button title="Seja bem vindo em nossa plataforma"
         onPress={
             abrirDawer
         } 
             />
-   <View style={styles.container}>
+     <View style={styles.container}>
+
                <Text style={styles.titulo}>Faça seu Login</Text>
              
              
@@ -45,6 +49,7 @@ function Login({navigation}) {
                   alignItems:'center',
                   justifyContent:'center',
                   borderRadius:10,
+                  marginTop:10,
               }}
                   title = ' ir para  Conteudo' onPress={() =>
                   navigation.navigate('Conteudo')}>
@@ -55,7 +60,7 @@ function Login({navigation}) {
 
           </View>
       </View>
-
+    </ScrollView>
       
     )
   }
@@ -63,10 +68,9 @@ function Login({navigation}) {
   const styles= StyleSheet.create({
     container:{
     flex:1,
-    alignItems:'center',
+     alignItems:'center',
     justifyContent:'center',
     backgroundColor:"#7DC2F7",
-    
     },
     
     input:{
@@ -92,7 +96,8 @@ function Login({navigation}) {
     },
     
     titulo:{
-    marginTop: 10,
+    marginTop: 60,
+    marginBottom:10,
     padding:10,
     fontSize:20,
     fontWeight:'bold',

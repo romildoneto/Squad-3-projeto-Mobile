@@ -15,10 +15,10 @@ import Login from "./src/Screens/Login";
   return (
     <NavigationContainer>
       <StatusBar />
-      <Drawer.Navigator initialRouteName="Home" drawerStyle={{backgroundColor:'blue'}}
-       overlayColor=''
+      <Drawer.Navigator initialRouteName="Home" drawerStyle={{backgroundColor:'#7DC2F7'}}
+       overlayColor='#7DC2F7'
        >
-        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="Home" component={Home}/>
         <Drawer.Screen name="Login" component={Login} />
         <Drawer.Screen name="Cadastro" component={Cadastro} />
         <Drawer.Screen name="Conteudo" component={Conteudo} />
@@ -26,6 +26,6 @@ import Login from "./src/Screens/Login";
       </Drawer.Navigator>
     </NavigationContainer>
   );
+ 
 }
-
 export default App;
