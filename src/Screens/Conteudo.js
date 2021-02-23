@@ -36,186 +36,159 @@ function Conteudo({ navigation }) {
             </Text>
             <Image
               source={Portugues}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{ width:'80%', height:200, marginTop: 36,marginStart:40}}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Lingua Portuguesa</Text>
             <Text
               style={{
-                marginLeft: 30,
+                marginLeft: 40,
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+              Interpretação de texto
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
 
           <View>
             <Image
               source={Historia}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>História</Text>
+            <Text style={{ marginLeft: 40 }}>
+              Cultura brasileira
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
           
           <View>
             <Image
               source={Geografia}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{  width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Geografia</Text>
+            <Text style={{ marginLeft: 40 }}>
+              Desmatamento
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
 
           <View>
             <Image
               source={Matematica}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{  width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Matemática </Text>
+            <Text style={{ marginLeft: 40 }}>
+              Equação de 1º e 2º grau
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
-            </TouchableOpacity>
-          </View>
-
-          <View>
-            <Image
-              source={Matematica}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
-            />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
-            </Text>
-            <TouchableOpacity
-              title=" ir para  home"
-              onPress={() => navigation.navigate("Home")}
-            >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
 
           <View>
             <Image
               source={Biologia}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Biologia</Text>
+            <Text style={{ marginLeft: 40 }}>
+              Formação H2O
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
 
           <View>
             <Image
               source={Educaçaofisica}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{  width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Educação Física</Text>
+            <Text style={{ marginLeft: 40 }}>
+              Esporte e alimentação saudável
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
 
           <View>
             <Image
               source={Quimica}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{  width:'80%', height:190, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Química</Text>
+            <Text style={{ marginLeft: 40 }}>
+              Propriedades da matéria
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
 
           <View>
             <Image
               source={Ingles}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Inglês</Text>
+            <Text style={{ marginLeft: 40 }}>
+              Conversação, escrita e leitura
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
 
           <View>
             <Image
               source={Fisica}
-              style={{ width: 300, height: 150, marginTop: 36, marginLeft: 30 }}
+              style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 30, fontSize: 18 }}>Título do card</Text>
-            <Text style={{ marginLeft: 30 }}>
-              Um exemplo de texto rápido para construir o título do card e fazer
-              preencher o conteúdo do card
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Física</Text>
+            <Text style={{ marginLeft: 40 }}>
+              Teoria eletromagnética
             </Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
             >
-              <Text style={{ color: "red", marginLeft: 30 }}> Clique aqui</Text>
+              <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -232,8 +205,8 @@ const styles = StyleSheet.create({
   },
 
   portugues: {
-    // justifyContent:'center',
-    // alignItems:'center',
+    //  justifyContent:'center',
+    //  alignItems:'center',
   },
 });
 export default Conteudo;

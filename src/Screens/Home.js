@@ -18,13 +18,13 @@ function Home({ navigation }) {
       <Button title="Seja bem vindo em nossa plataforma" onPress={abrirDawer} />
 
       <View style={styles.logo}>
-        <Image source={Logo} style={{ height: 100 }} />
+        <Image source={Logo} style={{ height: 130,justifyContent:'center',alignItems:'center' }}  />
       </View>
 
       <View style={styles.carrossel}>
         <Image
           source={Professor}
-          style={{ width: 400, height: 150, marginTop: 36 }}
+          style={{ width: '100%', height: 200, marginTop: 100 }}
         />
       </View>
 
@@ -32,12 +32,12 @@ function Home({ navigation }) {
         <Image
           source={Cardimagem}
           style={{
-            width: 300,
+            width: '80%',
             height: 300,
             justifyContent: "center",
             alignItems: "center",
-            marginBottom: 270,
-            marginTop: 200,
+            marginBottom: 80,
+            marginTop: 100,
           }}
         />
       </View>
@@ -45,12 +45,12 @@ function Home({ navigation }) {
       <View>
         <View
           style={{
-            marginBottom: 5,
+           
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <Text style={{ fontSize: 20, fontWeight: "bold" }}>
+          <Text style={{ fontSize: 20, fontWeight: "bold",marginBottom:10,marginTop:10}}>
             Sobre o Ensino Criativo
           </Text>
         </View>
@@ -122,8 +122,8 @@ function Home({ navigation }) {
           <Image
             source={Professora}
             style={{
-              width: 300,
-              height: 120,
+              width: '80%',
+              height: 200,
               marginTop: 36,
               marginLeft: 30,
               justifyContent: "center",
@@ -153,8 +153,8 @@ function Home({ navigation }) {
           <Image
             source={Menino}
             style={{
-              width: 300,
-              height: 120,
+              width:'80%',
+              height: 200,
               marginTop: 36,
               marginLeft: 30,
               justifyContent: "center",
@@ -184,8 +184,8 @@ function Home({ navigation }) {
           <Image
             source={Criança}
             style={{
-              width: 300,
-              height: 120,
+              width: '80%',
+              height: 200,
               marginTop: 36,
               marginLeft: 30,
               justifyContent: "center",
@@ -214,17 +214,41 @@ function Home({ navigation }) {
         <Text
           style={{
             backgroundColor: "#7DC2F7",
-            height: 30,
+            height: 40,
+            width:'100%',
             marginTop: 20,
-            marginLeft: 30,
+            // marginLeft: 30,
             justifyContent: "center",
             alignItems: "center",
-            marginRight: 30,
+            paddingLeft:50,
+            marginRight: 25,
+            color:'white',
+            fontWeight:'bold',
+            fontSize:15,
+            paddingTop:5,
           }}
         >
-          Entre também nas nossas redes sociais
+          Entre em contato com a nossa plataforma
         </Text>
       </View>
+<View>
+
+  <Text style={{ marginLeft: 100, fontSize: 18,fontWeight:'bold',paddingTop:10}}>ENSINO CRIATIVO</Text>
+  <Text style={{marginLeft: 30,paddingTop:5,textAlign:'left'}}>Uma plataforma digital para fortalecer seus conhecimentos,
+    a um click de distância.
+    Compromisso máximo com seu desenvolvimento escolar.Educação de qualidade para todos.
+
+  </Text>
+</View>
+<View>
+  <Text style={{ marginLeft: 130, fontSize: 18,fontWeight:'bold',paddingTop:10}}>CONTATO</Text>
+<Text style={{marginLeft: '20%',paddingTop:5}}>Av. Paulista, 1500- São Paulo</Text>
+<Text style={{marginLeft: '20%',paddingTop:5}}>contato@ensinocriativo.com.br</Text>
+
+  <Text style={{marginLeft: '30%',paddingTop:5}}>Tel: (11) 98500-1000</Text>
+  <Text style={{marginLeft: '30%',paddingTop:5}}>Fax: (11) 4688-0000</Text>
+
+  </View>
     </ScrollView>
   );
 }
@@ -238,20 +262,19 @@ const styles = StyleSheet.create({
   },
   logo: {
     flex: 1,
-    width: 100,
-    height: 5,
+    width: '20%',
+    height:30,
   },
 
   carrossel: {
-    marginBottom: 80,
-    marginTop: 59,
+    // marginBottom: ,
+    
   },
 
   foto: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: 0,
     height: 300,
   },
 });

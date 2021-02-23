@@ -45,17 +45,18 @@ function Login({navigation}) {
               style={{
                   borderStartColor:'#fff',
                   width:300,
-                  height:30,
+                  height:300,
                   alignItems:'center',
                   justifyContent:'center',
                   borderRadius:10,
-                  marginTop:10,
+                  paddingBottom:250,
+                  
               }}
                   title = ' ir para  Conteudo' onPress={() =>
                   navigation.navigate('Conteudo')}>
 
 
-                      <Text style = {{color:'black'}}>Entre na pagina de Conteudo</Text>
+                      <Text style = {{color:'white',fontWeight:'bold', marginTop:1,fontSize:20,}}>Entre na pagina de Conteudo</Text>
                   </TouchableOpacity>
 
           </View>
@@ -71,6 +72,9 @@ function Login({navigation}) {
      alignItems:'center',
     justifyContent:'center',
     backgroundColor:"#7DC2F7",
+   
+    
+   
     },
     
     input:{

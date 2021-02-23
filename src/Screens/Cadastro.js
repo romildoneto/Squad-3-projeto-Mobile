@@ -77,7 +77,7 @@ function Cadastro({navigation}) {
               style={{
                   borderStartColor:'#fff',
                   width:300,
-                  height:30,
+                  height:80,
                   alignItems:'center',
                   justifyContent:'center',
                   borderRadius:5,
@@ -86,7 +86,7 @@ function Cadastro({navigation}) {
                   navigation.navigate('Login')}>
 
 
-                      <Text style = {{color:'black'}}>Entre na pagina de Login</Text>
+                      <Text style = {{color:'white',fontWeight:'bold',}}>Entre na pagina de Login</Text>
                   </TouchableOpacity>
 
 
@@ -113,6 +113,7 @@ function Cadastro({navigation}) {
     marginTop: 10,
     padding:10,
     width:300,
+    height:50,
     backgroundColor:'#fff',
     fontSize:16,
     fontWeight:'bold',
@@ -123,6 +124,7 @@ function Cadastro({navigation}) {
     marginTop: 10,
     padding:10,
     width:300,
+    height:50,
     backgroundColor:'#fff',
     fontSize:16,
     fontWeight:'bold',
@@ -131,13 +133,14 @@ function Cadastro({navigation}) {
     },
     
     titulo:{
-    marginTop: 10,
+    marginTop: 2,
     padding:10,
     fontSize:20,
     fontWeight:'bold',
     alignItems:'center',
     justifyContent:'center',
     color:'#fff',
+    height:60,
     
     },
     })
