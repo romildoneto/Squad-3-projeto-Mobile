@@ -10,6 +10,25 @@ import Quimica from "../../assets/losa21.jpeg";
 import Ingles from "../../assets/losa22.jpeg";
 import Fisica from "../../assets/losa23.jpeg";
 import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+// import Modal from 'react-native-modal';
+
+// function Modal (){
+// const [visible,setVisible] = useState(false)
+// return(
+//     <View style={Styles.container}>
+//               <Text>fazer um modal</Text>
+//               <Button title='mostrar modal' onPress={()=>{setVisible(true)}} />
+//           <Modal isVisible={visible}>
+//             <View style={{backgroundColor:'blue',height:50}}>
+//               <Text>esta correto</Text>
+//               <Button title='fechar modal' onPress={()=>{setVisible(false)}}/>
+//            </View>
+//          </Modal>
+//      </View>
+// )
+
+// }
+
 
 function Conteudo({ navigation }) {
   function abrirDawer() {
@@ -19,6 +38,12 @@ function Conteudo({ navigation }) {
   return (
     <View style={styles.container}>
       <Button title="Seja bem vindo em nossa plataforma" onPress={abrirDawer} />
+      <TouchableOpacity
+              title=" ir para  home"
+              onPress={() => navigation.navigate("Home")}
+            >
+              <Text style={{ color: "white", marginLeft: 900, backgroundColor:'red', marginTop:10,width:160, height:30,fontWeight:'bold' }}> Adicionar plano de aula</Text>
+       </TouchableOpacity>
       <ScrollView>
         <View style={styles.portugues}>
           <View>
@@ -38,7 +63,7 @@ function Conteudo({ navigation }) {
               source={Portugues}
               style={{ width:'80%', height:200, marginTop: 36,marginStart:40}}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Lingua Portuguesa</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text
               style={{
                 marginLeft: 40,
@@ -46,8 +71,14 @@ function Conteudo({ navigation }) {
                 alignItems: "center",
               }}
             >
-              Interpretação de texto
+              Lingua Portuguesa
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
@@ -61,10 +92,16 @@ function Conteudo({ navigation }) {
               source={Historia}
               style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>História</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text style={{ marginLeft: 40 }}>
-              Cultura brasileira
+              História
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
@@ -78,10 +115,16 @@ function Conteudo({ navigation }) {
               source={Geografia}
               style={{  width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Geografia</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text style={{ marginLeft: 40 }}>
-              Desmatamento
+              Geografia
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
@@ -95,10 +138,16 @@ function Conteudo({ navigation }) {
               source={Matematica}
               style={{  width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Matemática </Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga </Text>
             <Text style={{ marginLeft: 40 }}>
-              Equação de 1º e 2º grau
+              Matemática Básica
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
@@ -112,10 +161,16 @@ function Conteudo({ navigation }) {
               source={Biologia}
               style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Biologia</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text style={{ marginLeft: 40 }}>
-              Formação H2O
+              Biologia
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
@@ -129,13 +184,19 @@ function Conteudo({ navigation }) {
               source={Educaçaofisica}
               style={{  width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Educação Física</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text style={{ marginLeft: 40 }}>
-              Esporte e alimentação saudável
+              Educação Física
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
-              onPress={() => navigation.navigate("Home")}
+              onPress={() => navigation.navigate("Modal")}
             >
               <Text style={{ color: "red", marginLeft: 40 }}> Entrar</Text>
             </TouchableOpacity>
@@ -146,10 +207,16 @@ function Conteudo({ navigation }) {
               source={Quimica}
               style={{  width:'80%', height:190, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Química</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text style={{ marginLeft: 40 }}>
-              Propriedades da matéria
+              Quimica
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
@@ -163,10 +230,16 @@ function Conteudo({ navigation }) {
               source={Ingles}
               style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Inglês</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text style={{ marginLeft: 40 }}>
-              Conversação, escrita e leitura
+             Inglês
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}
@@ -180,10 +253,16 @@ function Conteudo({ navigation }) {
               source={Fisica}
               style={{ width:'80%', height:200, marginTop: 36,marginStart:40 }}
             />
-            <Text style={{ marginLeft: 40, fontSize: 18 }}>Física</Text>
+            <Text style={{ marginLeft: 40, fontSize: 18 }}>Autor: Roseli Braga</Text>
             <Text style={{ marginLeft: 40 }}>
-              Teoria eletromagnética
+              Física
             </Text>
+            <Text style={{
+                marginLeft: 40,
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >Indicação de 8 a 10 anos</Text>
             <TouchableOpacity
               title=" ir para  home"
               onPress={() => navigation.navigate("Home")}

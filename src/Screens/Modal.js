@@ -4,7 +4,7 @@ import {  Text, View,Button,TextInput,StyleSheet,
 import { ScrollView } from 'react-native-gesture-handler';
 
 
-function Login({navigation}) {
+function Modal({navigation}) {
     function abrirDawer() {
       navigation.openDrawer();
     }
@@ -21,23 +21,45 @@ function Login({navigation}) {
             />
      <View style={styles.container}>
 
-               <Text style={styles.titulo}>Faça seu Login</Text>
+               <Text style={styles.titulo}>Plano de aula</Text>
              
              
-             
+             <Text>Unidade temática:</Text>
              <TextInput
              style={styles.input}
-             placeholder="Digite seu email"
+             
              />
-               <TextInput
-               style={styles.input}
-               secureTextEntry={true}
-               placeholder="Digite sua senha"
+              <Text>Objeto de conhecimento:</Text>
+             <TextInput
+             style={styles.input}
+             
              />
+              <Text>Habilidades:</Text>
+             <TextInput
+             style={styles.input}
+             
+             />
+              <Text>Descrição das atividades com recursos utilizados:</Text>
+             <TextInput
+             style={styles.input}
+             
+             />
+              <Text>Atividades de estudo:</Text>
+             <TextInput
+             style={styles.input}
+             
+             />
+              <Text>Instrumento de avaliação:</Text>
+             <TextInput
+             style={styles.input}
+             
+             />
+             
          <TouchableOpacity
           
           >
 
+         <Text style={styles.botaoText }>Fechar </Text>
          <Text style={styles.botaoText }>Enviar </Text>
 
 
@@ -55,11 +77,8 @@ function Login({navigation}) {
                   paddingBottom:250,
                   
               }}
-                  title = ' ir para  Conteudo' onPress={() =>
-                  navigation.navigate('Conteudo')}>
-
-
-                      <Text style = {{color:'white',fontWeight:'bold', marginTop:1,fontSize:20,}}>Entre na pagina de Conteudo</Text>
+                  title = ' ir para  Modal' onPress={() =>
+                  navigation.navigate('Modal')}>
                   </TouchableOpacity>
 
           </View>
@@ -92,10 +111,10 @@ function Login({navigation}) {
     },
     
     botaoText:{
-    marginTop: 10,
-    padding:10,
-    width:300,
-    backgroundColor:'#fff',
+     marginTop: 10,
+     padding:10,
+    width:80,
+    backgroundColor:'blue',
     fontSize:16,
     fontWeight:'bold',
     borderRadius: 10,
@@ -114,4 +133,4 @@ function Login({navigation}) {
     
     },
     })
-export default Login;
+export default Modal;

@@ -33,7 +33,7 @@ function Home({ navigation }) {
           source={Cardimagem}
           style={{
             width: '80%',
-            height: 300,
+            height: 250,
             justifyContent: "center",
             alignItems: "center",
             marginBottom: 80,
@@ -51,7 +51,7 @@ function Home({ navigation }) {
           }}
         >
           <Text style={{ fontSize: 20, fontWeight: "bold",marginBottom:10,marginTop:10}}>
-            Sobre o Ensino Criativo
+            Sobre a Ensino Criativo
           </Text>
         </View>
 
@@ -234,7 +234,7 @@ function Home({ navigation }) {
 <View>
 
   <Text style={{ marginLeft: 100, fontSize: 18,fontWeight:'bold',paddingTop:10}}>ENSINO CRIATIVO</Text>
-  <Text style={{marginLeft: 30,paddingTop:5,textAlign:'left'}}>Uma plataforma digital para fortalecer seus conhecimentos,
+  <Text style={{marginLeft: 30,paddingTop:5,}}>Uma plataforma digital para fortalecer seus conhecimentos,
     a um click de distância.
     Compromisso máximo com seu desenvolvimento escolar.Educação de qualidade para todos.
 
